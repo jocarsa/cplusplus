@@ -8,7 +8,6 @@ void menu() {
         std::cout << "4.-Actualizar un registro" << std::endl;
         std::cout << "5.-Eliminar un registro" << std::endl;
         std::cout << "6.-Salir del programa" << std::endl;
-        std::cout << "7.-Guardar registros" << std::endl;
         std::cout << "Opción escogida (1-6):" << std::endl;
         std::cin >> opcion;
         std::cout << "La opción seleccionada es:" << opcion << std::endl;
@@ -35,9 +34,6 @@ void menu() {
                     system("pause");
                 #endif
                     exit(0);
-                break;
-            case 7:
-                guardarEnArchivo(base_de_datos);
                 break;
             default:
                 std::cout << "Opción no válida:" << std::endl;
